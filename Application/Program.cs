@@ -8,7 +8,9 @@ namespace Application
         {
             using(var context = new ChampionshipContext())
             {
+                Console.WriteLine(context);
 
+                var list = context.Teams.ToList();
             }
         }
     }
